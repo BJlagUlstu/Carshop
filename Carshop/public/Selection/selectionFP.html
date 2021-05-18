@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+    <header>
+        <title>Selection for period</title>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="../main.html">Автосалон</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Покупатель</a>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <form action="/createCustomer" method="get">
+                                            <button type="submit" class="btn rhighlight">Создание</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/readCustomer" method="get">
+                                            <button type="submit" class="btn rhighlight">Чтение</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/updateCustomer" method="get">
+                                            <button type="submit" class="btn rhighlight">Обновление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/deleteCustomer" method="get">
+                                            <button type="submit" class="btn rhighlight">Удаление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Персонал</a>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <form action="/createstudent" method="get">
+                                            <button type="submit" class="btn rhighlight">Создание</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/readstudent" method="get">
+                                            <button type="submit" class="btn rhighlight">Чтение</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/updatestudent" method="get">
+                                            <button type="submit" class="btn rhighlight">Обновление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/deletestudent" method="get">
+                                            <button type="submit" class="btn rhighlight">Удаление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Транспорт</a>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <form action="/createTransport" method="get">
+                                            <button type="submit" class="btn rhighlight">Создание</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/readTransport" method="get">
+                                            <button type="submit" class="btn rhighlight">Чтение</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/updateTransport" method="get">
+                                            <button type="submit" class="btn rhighlight">Обновление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/deleteTransport" method="get">
+                                            <button type="submit" class="btn rhighlight">Удаление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Билет</a>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <form action="/createTicket" method="get">
+                                            <button type="submit" class="btn rhighlight">Создание</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/readTicket" method="get">
+                                            <button type="submit" class="btn rhighlight">Чтение</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/updateTicket" method="get">
+                                            <button type="submit" class="btn rhighlight">Обновление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/deleteTicket" method="get">
+                                            <button type="submit" class="btn rhighlight">Удаление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Журнал продаж</a>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <form action="/createSale" method="get">
+                                            <button type="submit" class="btn rhighlight">Создание</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/readSale" method="get">
+                                            <button type="submit" class="btn rhighlight">Чтение</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/updateSale" method="get">
+                                            <button type="submit" class="btn rhighlight">Обновление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/deleteSale" method="get">
+                                            <button type="submit" class="btn rhighlight">Удаление</button>
+                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#">Выборки</a>
+                            <ul>
+                                <li>
+                                    <a>
+                                        <form action="/selectionFRB" method="get">
+                                            <button type="submit" class="btn rhighlight">Справочник</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/selectionFMF" method="get">
+                                            <button type="submit" class="btn rhighlight">Главная форма</button>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <form action="/selectionFP" method="get">
+                                            <button type="submit" class="btn rhighlight">Период</button>
+                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <form>
+        <div align="center" class="datePicker">
+            <label>C&emsp;<input type="date" id="dateFrom" name="dateFrom">&emsp;до&emsp;<input type="date" id="dateTo" name="dateTo"></label>
+            <button type="submit" class="btn btn-outline-warning btn-lg btn-form" onclick="check()">Form</button>
+        </div>
+        <table align="center" class="select" id='table' border="1">
+            <tr>
+                <label id='helperLabelOne' hidden='true'><%= options %></label>
+                <th width='40'>&nbsp;</th>
+                <th><label class="col-sm col-form-label">date_of_payment</label></th>
+                <th><label class="col-sm col-form-label">student_name</label></th>
+                <th><label class="col-sm col-form-label">total</label></th>
+            </tr>
+        </table>
+    </form>
+</body>
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2021 - Автосалон «Асланбек» - Все права защищены
+    </div>
+</footer>
+<script>
+    var text = helperLabelOne.textContent;
+    if(text) {
+        var body = text.split(',');
+        var tableRef = document.getElementById('table');
+        for(var i = 1; i <= body.length; i++) {
+            var newRow = tableRef.insertRow((i + 2)/3);
+            var newCell = newRow.insertCell(0);
+            var newText = document.createTextNode((i + 2)/3);
+            newCell.appendChild(newText);
+
+            var newCellDOP = newRow.insertCell(1);
+            var newTextDOP = document.createTextNode(body[i - 1]);
+            newCellDOP.appendChild(newTextDOP);
+            i++;
+
+            var newCellstudentName = newRow.insertCell(2);
+            var newTextstudentName = document.createTextNode(body[i - 1]);
+            newCellstudentName.appendChild(newTextstudentName);
+            i++;
+
+            var newCellTotal = newRow.insertCell(3);
+            var newTextTotal = document.createTextNode(body[i - 1]);
+            newCellTotal.appendChild(newTextTotal);
+        }
+        function check() {
+            const dates = []
+            dates.push(document.getElementById('dateFrom').value)
+            dates.push(document.getElementById('dateTo').value)
+            fetch('http://localhost:3000/api/selectionFP/' + dates)
+        }
+    }
+</script>
+</html>
