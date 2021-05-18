@@ -1,0 +1,39 @@
+body {
+    background: blueviolet !important;
+}
+
+.container form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.container form #button-transfer {
+    margin-top: 20%;
+}
+
+.container form #button-insert {
+    margin-top: 10%;
+}
+
+.container form #button-makeInquiries {
+    margin-top: 10%;
+}
+
+.container form input {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    width: 180px;
+}
+
+.container p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    color: greenyellow;
+    font-size: 150px;
+}
